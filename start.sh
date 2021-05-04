@@ -2,11 +2,19 @@
 
 cd /usr/src/app
 
-if [ -z "${LIBDRIVE_VERSION}" ]; then
-    curl -L -s $(curl "https://api.github.com/repos/libDrive/libDrive/releases/latest" | grep -Po '"browser_download_url": "\K.*?(?=")') | tar xf - -C .
+if [ ! -z "${LIBDRIVE_VERSION}" ]; then
+    VER="tags/${LIBDRIVE_VERSION}"
 else
-    curl -L -s $(curl "https://api.github.com/repos/libDrive/libDrive/releases/${LIBDRIVE_VERSION}" | grep -Po '"browser_download_url": "\K.*?(?=")') | tar xf - -C .
+    VER="latest"
 fi
+
+if [ ! -z "${LIBDRIVE_REPOSITRY}" ]; then
+    REPO=${LIBDRIVE_REPOSITRY}
+else
+    REPO="libDrive/libDrive"
+fi
+
+curl -L -s $(curl -s "https://api.github.com/repos/${REPO}/releases/${VER}" | grep -Po '"browser_download_url": "\K.*?(?=")') | tar xf - -C .
 
 pip3 install -r requirements.txt -q --no-cache-dir
 

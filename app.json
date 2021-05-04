@@ -21,7 +21,7 @@
       "value": "{\r\n    \"access_token\": \"\",\r\n    \"account_list\": [],\r\n    \"arcio\": null,\r\n    \"auth\": true,\r\n    \"build_interval\": 120,\r\n    \"build_type\": \"hybrid\",\r\n    \"category_list\": [],\r\n    \"client_id\": \"\",\r\n    \"client_secret\": \"\",\r\n    \"cloudflare\": \"\",\r\n    \"refresh_token\": \"\",\r\n    \"secret_key\": \"\",\r\n    \"tmdb_api_key\": \"\",\r\n    \"token_expiry\": \"\",\r\n    \"transcoded\": false,\r\n    \"signup\": false\r\n}"
     },
     "LIBDRIVE_VERSION": {
-      "description": "The tag version or 'latest'. Example: 'tags/v1.2.9'",
+      "description": "The tag version or latest. Correct usage: 'v1.2.9' or 'latest'",
       "value": "latest"
     },
     "WEB_CONCURRENCY": {
