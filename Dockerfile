@@ -2,6 +2,8 @@ FROM ubuntu:20.04
 
 WORKDIR /usr/src/app
 
+ENV TZ UTC
+
 RUN chmod 777 /usr/src/app
 
 RUN apt-get update -y && \
