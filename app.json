@@ -20,9 +20,15 @@
       "description": "Create this through the config generator: https://libdrive-config.netlify.app/",
       "value": "{\r\n    \"access_token\": \"\",\r\n    \"account_list\": [],\r\n    \"arcio\": null,\r\n    \"auth\": true,\r\n    \"build_interval\": 120,\r\n    \"build_type\": \"hybrid\",\r\n    \"category_list\": [],\r\n    \"client_id\": \"\",\r\n    \"client_secret\": \"\",\r\n    \"cloudflare\": \"\",\r\n    \"refresh_token\": \"\",\r\n    \"secret_key\": \"\",\r\n    \"tmdb_api_key\": \"\",\r\n    \"token_expiry\": \"\",\r\n    \"transcoded\": false,\r\n    \"signup\": false\r\n}"
     },
+    "LIBDRIVE_PINGER": {
+      "description": "If this is enabled, the app is automatically pinged every 10 minutes to prevent Heroku from making it go to sleep",
+      "value": "true",
+      "required": false
+    },
     "LIBDRIVE_VERSION": {
       "description": "The tag version or latest. Correct usage: 'v1.2.9' or 'latest'",
-      "value": "latest"
+      "value": "latest",
+      "required": false
     },
     "WEB_CONCURRENCY": {
       "description": "Don't change this, leave the value as 1",
