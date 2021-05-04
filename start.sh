@@ -3,7 +3,11 @@
 cd /usr/src/app
 
 if [ ! -z "${LIBDRIVE_VERSION}" ]; then
-    VER="tags/${LIBDRIVE_VERSION}"
+    if [ "${LIBDRIVE_VERSION}" = "latest" ]; then
+        VER="latest"
+    else
+        VER="tags/${LIBDRIVE_VERSION}"
+    fi
 else
     VER="latest"
 fi
