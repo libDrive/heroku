@@ -3,7 +3,6 @@
     <img src="https://i.ibb.co/HVB5Dw1/lib-Drive-Header.png" width="600px" />
   </h3>
 </a>
-
 <p align="center">
   <a href="https://github.com/libDrive/libDrive/releases">
     <img src="https://img.shields.io/github/downloads/libDrive/libDrive/total?color=%234197fe&style=for-the-badge" />
@@ -12,22 +11,14 @@
     <img src="https://img.shields.io/github/v/release/libDrive/libDrive?color=%234197fe&style=for-the-badge" />
   </a>
 </p>
-
 <p align="center">
   <a href="https://heroku.com/deploy?template=https://github.com/libDrive/heroku">
-    <img src="https://www.herokucdn.com/deploy/button.svg" />
+    <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200" />
   </a>
 </p>
-
 <p align="center">
-  <a href="https://eliasbenb.cf">
-    <img src="https://i.ibb.co/rmDXnnk/Magnet-Magnet-prod.png" width="180" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://t.me/libdrive_news">
-    <img src="https://cdn0.iconfinder.com/data/icons/social-network-24/512/Telegram-64.png" />
+  <a href="https://t.me/libdrive_support">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/42px-Telegram_logo.svg.png" width="42" />
   </a>
 </p>
 
