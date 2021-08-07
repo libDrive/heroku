@@ -3,6 +3,7 @@
 cd /usr/src/app
 
 mkdir ./dev
+cp ./alive.py ./dev/alive.py
 cd ./dev
 mkdir ./tmp
 cd ./tmp

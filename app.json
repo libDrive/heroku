@@ -31,6 +31,16 @@
       "value": "latest",
       "required": false
     },
+    "PINGER": {
+      "description": "The pinger pings your app every 15 minutes to prevent it from sleeping. Input the URL of your app (e.g. https://APP_NAME.herokuapp.com). Leave empty if you don't want to use the pinger",
+      "value": "https://app.herokuapp.com",
+      "required": false
+    },
+    "PINGER_INTERVAL": {
+      "description": "How often, in seconds, the pinger will be used",
+      "value": "900",
+      "required": false
+    },
     "WEB_CONCURRENCY": {
       "description": "Don't change this, leave the value as 1",
       "value": "1"
