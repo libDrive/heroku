@@ -28,18 +28,18 @@
       "required": false
     },
     "LIBDRIVE_CONFIG": {
-      "description": "Create this through the config generator: https://config.libdrive.tk",
+      "description": "Create this through the config generator: https://config.libdrive.tk. Make sure to read the meaning of each variable on the wiki: https://github.com/libDrive/libDrive/wiki/Config",
       "value": "{\r\n    \"access_token\": \"\",\r\n    \"account_list\": [],\r\n    \"arcio\": \"dev\",\r\n    \"auth\": true,\r\n    \"build_interval\": 120,\r\n    \"build_type\": \"hybrid\",\r\n    \"category_list\": [],\r\n    \"client_id\": \"\",\r\n    \"client_secret\": \"\",\r\n    \"cloudflare\": \"\",\r\n    \"refresh_token\": \"\",\r\n    \"secret_key\": \"\",\r\n    \"tmdb_api_key\": \"\",\r\n    \"token_expiry\": \"\",\r\n    \"prefer_mkv\": false,\r\n    \"prefer_mp4\": false,\r\n    \"transcoded\": false,\r\n    \"service_accounts\": [],\r\n    \"subtitles\": false,\r\n    \"signup\": false,\r\n    \"ui_config\": {}\r\n}",
       "required": true
     },
     "LIBDRIVE_VERSION": {
-      "description": "The tag version or latest. Correct usage: 'v1.2.9' or 'latest'",
+      "description": "The version to deploy (e.g. v1.3.10). 'latest' and 'dev' are also accepted, 'latest' automatically updates libDrive on each restart. 'dev' builds libDrive using the latest commit, this will only be built once, on the first deploy",
       "value": "latest",
       "required": false
     },
     "PINGER": {
       "description": "The pinger pings your app every 15 minutes to prevent it from sleeping. Input the URL of your app (e.g. https://APP_NAME.herokuapp.com). Leave empty if you don't want to use the pinger",
-      "value": "https://app.herokuapp.com",
+      "value": "https://APP_NAME.herokuapp.com",
       "required": false
     },
     "PINGER_INTERVAL": {
