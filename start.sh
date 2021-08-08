@@ -28,4 +28,4 @@ fi
 
 pip3 install -r requirements.txt -q --no-cache-dir
 gunicorn main:app &
-python3 pinger.py
+python3 /usr/src/app/pinger.py
