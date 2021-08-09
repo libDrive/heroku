@@ -27,5 +27,9 @@ else
 fi
 
 pip3 install -r requirements.txt -q --no-cache-dir
-gunicorn main:app &
-python3 /usr/src/app/pinger.py
+if [ ! -z "${PINGER}" ]; then
+    gunicorn main:app &
+    python3 /usr/src/app/pinger.py
+else
+    gunicorn main:app
+fi
