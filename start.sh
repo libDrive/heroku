@@ -27,9 +27,20 @@ else
 fi
 
 pip3 install -r requirements.txt -q --no-cache-dir
-if [ ! -z "${PINGER}" ]; then
-    gunicorn main:app &
-    python3 /usr/src/app/pinger.py
+if [ "${LOCAL_CLOUDFLARE}" = "True" ] | [ "$LOCAL_CLOUDFLARE" = "true" ]; then
+    if [ ! -z "${PINGER}" ]; then
+        gunicorn main:app &
+        python3 /usr/src/app/pinger.py &
+        wrangler dev --port 31146
+    else
+        gunicorn main:app &
+        wrangler dev --port 31146
+    fi
 else
-    gunicorn main:app
+    if [ ! -z "${PINGER}" ]; then
+        gunicorn main:app &
+        python3 /usr/src/app/pinger.py
+    else
+        gunicorn main:app
+    fi
 fi

@@ -16,6 +16,7 @@ RUN apt-get update -y && \
 RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
 RUN apt-get -y install nodejs
 RUN npm install --global yarn
+RUN npm install --global @cloudflare/wrangler
 
 RUN curl -O https://raw.githubusercontent.com/libDrive/server/main/requirements.txt && \
     pip3 install -r requirements.txt --no-cache-dir
