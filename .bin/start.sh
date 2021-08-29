@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /usr/src/app
+cd /usr/src/app/.bin
 
 if [ "${LIBDRIVE_VERSION}" != "dev" ]; then
     if [ ! -z "${LIBDRIVE_VERSION}" ]; then
@@ -30,7 +30,7 @@ pip3 install -r requirements.txt -q --no-cache-dir
 if [ "${LOCAL_CLOUDFLARE}" = "True" ] | [ "$LOCAL_CLOUDFLARE" = "true" ]; then
     if [ ! -z "${PINGER}" ]; then
         gunicorn main:app &
-        python3 /usr/src/app/pinger.py &
+        python3 /usr/src/app/.bin/pinger.py &
         wrangler dev --port 31146
     else
         gunicorn main:app &
@@ -39,7 +39,7 @@ if [ "${LOCAL_CLOUDFLARE}" = "True" ] | [ "$LOCAL_CLOUDFLARE" = "true" ]; then
 else
     if [ ! -z "${PINGER}" ]; then
         gunicorn main:app &
-        python3 /usr/src/app/pinger.py
+        python3 /usr/src/app/.bin/pinger.py
     else
         gunicorn main:app
     fi

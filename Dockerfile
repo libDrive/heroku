@@ -25,5 +25,5 @@ ENV PATH="/usr/src/app/.local/bin:${PATH}"
 
 COPY . .
 
-RUN chmod +x setup.sh start.sh
-RUN ./setup.sh
+RUN chmod +x ./.bin/setup.sh ./.bin/start.sh
+RUN ./.bin/setup.sh

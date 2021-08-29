@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /usr/src/app
+cd /usr/src/app/.bin
 
 mkdir ./dev
 cd ./dev
@@ -21,7 +21,7 @@ mv main.py requirements.txt ../libDrive.Server
 mv ./src/* ../libDrive.Server/src
 mv ./templates/* ../libDrive.Server/templates
 cd ..
-cp ../../README.md ../../LICENSE ./libDrive.Server
+cp ../../../README.md ../../../LICENSE ./libDrive.Server
 cd libDrive.Server
 mv ./* ../..
 cd ../../..
